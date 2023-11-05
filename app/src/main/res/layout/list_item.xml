@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/title_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundCorner"
+        android:src="@drawable/cutnyakdien"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsemibold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_image"
+        android:text="Cut Nyak Dien"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/subheading"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppinsregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_image"
+        android:text="Pahlawan Aceh"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ttl"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppinsregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_image"
+        android:text="Pahlawan Aceh"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_image"
+        android:background="@color/underline"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
